@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm");
+
     if (form) {
         form.addEventListener("submit", function (event) {
             event.preventDefault();
@@ -9,12 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
             const subject = document.getElementById("subject").value.trim();
             const message = document.getElementById("message").value.trim();
 
-            if (!name || !email || !subject || !message) {
+            if (name === "" || email === "" || subject === "" || message === "") {
                 alert("الرجاء تعبئة جميع الحقول قبل إرسال الرسالة.");
                 return;
             }
 
-            alert("تم استلام رسالتك بنجاح يا " + name + ". شكرًا لتواصلك مع خط التماس.");
+            alert(
+                "شكرًا لتواصلك مع صحيفة خط التماس يا " + name +
+                ".\nتم استلام رسالتك بعنوان: " + subject +
+                ".\nسيقوم فريق التحرير بمراجعة الرسالة."
+            );
+
             form.reset();
         });
     }
