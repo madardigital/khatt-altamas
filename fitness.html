@@ -8,13 +8,13 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-  .section-photo{
+  .section-photo,
+  .section-graphic{
     width:100%;
     border-radius:18px;
     display:block;
     margin:18px 0 22px;
-    object-fit:cover;
-    max-height:420px;
+    overflow:hidden;
   }
 
   .graphic-box{
@@ -126,10 +126,55 @@
         <h2>اللياقة وجودة الحياة: حين تتحول الحركة إلى عادة يومية</h2>
     </div>
 
-    <img class="section-photo"
-         src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1400"
-         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=80';"
-         alt="صورة رئيسية عن النشاط البدني واللياقة">
+    <div class="graphic-box light">
+        <svg viewBox="0 0 1200 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="رسم تعبيري عن اللياقة وجودة الحياة">
+            <defs>
+                <linearGradient id="bgMain" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#dbeafe"/>
+                    <stop offset="100%" stop-color="#ecfccb"/>
+                </linearGradient>
+                <linearGradient id="hillA" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#86efac"/>
+                    <stop offset="100%" stop-color="#bbf7d0"/>
+                </linearGradient>
+                <linearGradient id="hillB" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#bfdbfe"/>
+                    <stop offset="100%" stop-color="#93c5fd"/>
+                </linearGradient>
+            </defs>
+            <rect width="1200" height="560" fill="url(#bgMain)"/>
+            <circle cx="1020" cy="110" r="52" fill="#fde68a"/>
+            <path d="M0 360 C160 280, 280 290, 430 350 S760 430, 1200 320 L1200 560 L0 560 Z" fill="url(#hillB)"/>
+            <path d="M0 400 C220 330, 340 360, 520 420 S910 520, 1200 420 L1200 560 L0 560 Z" fill="url(#hillA)"/>
+            <path d="M90 390 C210 360, 340 350, 500 390 S840 445, 1080 390" stroke="#64748b" stroke-width="16" fill="none" stroke-linecap="round"/>
+            <path d="M120 392 C230 365, 350 360, 500 392 S830 440, 1060 390" stroke="#ffffff" stroke-width="5" fill="none" stroke-dasharray="18 16" stroke-linecap="round"/>
+            <g transform="translate(365,275)">
+                <circle cx="0" cy="0" r="28" fill="#0f172a"/>
+                <path d="M0 30 L18 105 L-8 155" stroke="#0f172a" stroke-width="17" fill="none" stroke-linecap="round"/>
+                <path d="M16 82 L88 102" stroke="#0f172a" stroke-width="17" fill="none" stroke-linecap="round"/>
+                <path d="M18 105 L88 150" stroke="#0f172a" stroke-width="17" fill="none" stroke-linecap="round"/>
+                <path d="M-8 98 L-70 145" stroke="#0f172a" stroke-width="17" fill="none" stroke-linecap="round"/>
+                <path d="M-8 58 L-58 92" stroke="#0f172a" stroke-width="17" fill="none" stroke-linecap="round"/>
+                <path d="M94 90 C125 80,148 86,171 101" stroke="#3b82f6" stroke-width="8" fill="none" stroke-linecap="round"/>
+                <path d="M101 114 C131 104,153 109,177 126" stroke="#60a5fa" stroke-width="6" fill="none" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(760,228)">
+                <circle cx="0" cy="0" r="22" fill="#334155"/>
+                <path d="M0 24 L12 86 L-6 124" stroke="#334155" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M10 86 L58 126" stroke="#334155" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M-4 82 L-50 118" stroke="#334155" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M10 48 L50 66" stroke="#334155" stroke-width="15" fill="none" stroke-linecap="round"/>
+                <path d="M-4 44 L-42 76" stroke="#334155" stroke-width="15" fill="none" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(910,332)">
+                <circle cx="0" cy="0" r="52" fill="#ffffff" opacity=".75"/>
+                <path d="M-22 0 C-22 -16, -10 -28, 6 -28 C22 -28, 34 -16, 34 0 C34 24, 6 42, 6 42 C6 42, -22 24, -22 0 Z" fill="#22c55e"/>
+            </g>
+        </svg>
+        <div class="graphic-note">
+            رسم بصري تعبيري يوضح الارتباط بين الحركة اليومية، والبيئة النشطة، وجودة الحياة.
+        </div>
+    </div>
 
     <p>لم تعد اللياقة البدنية ملفًا منفصلًا عن الحياة اليومية، ولا نشاطًا موسميًا يرتبط ببداية الصيف أو بقرار مؤقت مع مطلع العام. في 2026 تبدو العلاقة بين الرياضة وجودة الحياة أوضح من أي وقت مضى؛ فالنقاش لم يعد يدور فقط حول خسارة الوزن أو تحسين المظهر، بل حول نمط عيش كامل يشمل الحركة، والنوم، والصحة النفسية، والقدرة على العمل، ومقاومة الضغوط اليومية.</p>
 
@@ -178,8 +223,6 @@
                 <path d="M8 50 L52 72" stroke="#334155" stroke-width="14" fill="none" stroke-linecap="round"/>
                 <path d="M-6 46 L-36 76" stroke="#334155" stroke-width="14" fill="none" stroke-linecap="round"/>
             </g>
-            <text x="70" y="80" fill="#0f172a" font-size="38" font-family="Tahoma" font-weight="700">المشي والجري</text>
-            <text x="70" y="128" fill="#475569" font-size="24" font-family="Tahoma">نشاط منخفض التكلفة وسهل الدمج في الروتين اليومي</text>
         </svg>
         <div class="graphic-note">
             رسم توضيحي يعبّر عن فكرة أن المشي والجري يظلان أبسط وسائل النشاط البدني وأكثرها قابلية للاستمرار.
@@ -228,9 +271,6 @@
                 <circle cx="128" cy="30" r="28" fill="#f97316"/>
                 <path d="M113 19 H143 M128 4 V56" stroke="#fff" stroke-width="5"/>
             </g>
-            <text x="770" y="196" fill="#1d4ed8" font-size="34" font-family="Tahoma" font-weight="700">الرياضة المدرسية</text>
-            <text x="788" y="240" fill="#334155" font-size="22" font-family="Tahoma">اكتشاف مبكر • مهارات • انضباط • مشاركة</text>
-            <text x="70" y="60" fill="#e2e8f0" font-size="38" font-family="Tahoma" font-weight="700">من الحصة إلى الموهبة</text>
         </svg>
         <div class="graphic-note dark-note">
             شكل بصري يوضح العلاقة بين الرياضة المدرسية واكتشاف المواهب وصناعة العادة منذ المراحل الأولى.
@@ -307,8 +347,6 @@
                 <circle cx="66" cy="140" r="26" stroke="#1d4ed8" stroke-width="12" fill="none"/>
                 <circle cx="-58" cy="138" r="26" stroke="#1d4ed8" stroke-width="12" fill="none"/>
             </g>
-            <text x="70" y="78" fill="#0f172a" font-size="38" font-family="Tahoma" font-weight="700">المدينة النشطة</text>
-            <text x="70" y="126" fill="#475569" font-size="24" font-family="Tahoma">الممشى • الحديقة • الدراجة • الوصول الآمن</text>
         </svg>
         <div class="graphic-note">
             الرسم يوضح أن جودة الحياة لا ترتبط بالفرد وحده، بل بالبيئة الحضرية التي تسهّل الحركة اليومية.
@@ -345,9 +383,6 @@
             <path d="M750 360 C790 325,852 318,900 350" stroke="#f59e0b" stroke-width="16" fill="none" stroke-linecap="round"/>
             <circle cx="735" cy="373" r="13" fill="#f59e0b"/>
             <circle cx="915" cy="360" r="13" fill="#f59e0b"/>
-            <text x="675" y="98" fill="#e5e7eb" font-size="36" font-family="Tahoma" font-weight="700">حركة أفضل</text>
-            <text x="675" y="145" fill="#cbd5e1" font-size="24" font-family="Tahoma">تركيز • مزاج • نوم • توازن</text>
-            <text x="80" y="100" fill="#e5e7eb" font-size="38" font-family="Tahoma" font-weight="700">اللياقة والصحة النفسية</text>
         </svg>
         <div class="graphic-note dark-note">
             تصور بصري يربط بين النشاط البدني ومؤشرات المزاج والنوم والتوازن النفسي.
@@ -382,31 +417,33 @@
             <rect x="70" y="275" width="510" height="175" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
             <rect x="620" y="275" width="510" height="175" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
 
-            <text x="105" y="120" fill="#ffffff" font-size="30" font-family="Tahoma" font-weight="700">الخطوات اليومية</text>
-            <text x="105" y="185" fill="#dbeafe" font-size="56" font-family="Tahoma" font-weight="700">8,000+</text>
+            <rect x="110" y="132" width="210" height="16" rx="8" fill="#93c5fd"/>
+            <rect x="110" y="170" width="150" height="16" rx="8" fill="#dbeafe"/>
 
-            <text x="470" y="120" fill="#ffffff" font-size="30" font-family="Tahoma" font-weight="700">النشاط الأسبوعي</text>
-            <text x="470" y="185" fill="#bfdbfe" font-size="50" font-family="Tahoma" font-weight="700">150 دقيقة</text>
+            <rect x="470" y="132" width="170" height="16" rx="8" fill="#bfdbfe"/>
+            <rect x="470" y="170" width="205" height="16" rx="8" fill="#dbeafe"/>
 
-            <text x="795" y="120" fill="#ffffff" font-size="30" font-family="Tahoma" font-weight="700">الاستمرار</text>
-            <text x="795" y="185" fill="#dcfce7" font-size="50" font-family="Tahoma" font-weight="700">عادة لا حملة</text>
+            <rect x="795" y="132" width="190" height="16" rx="8" fill="#dcfce7"/>
+            <rect x="795" y="170" width="220" height="16" rx="8" fill="#bbf7d0"/>
 
-            <text x="105" y="320" fill="#0f172a" font-size="28" font-family="Tahoma" font-weight="700">مؤشرات يومية</text>
             <path d="M130 400 H520" stroke="#cbd5e1" stroke-width="6"/>
             <rect x="150" y="360" width="36" height="40" rx="10" fill="#60a5fa"/>
             <rect x="220" y="330" width="36" height="70" rx="10" fill="#3b82f6"/>
             <rect x="290" y="305" width="36" height="95" rx="10" fill="#2563eb"/>
             <rect x="360" y="285" width="36" height="115" rx="10" fill="#1d4ed8"/>
             <rect x="430" y="315" width="36" height="85" rx="10" fill="#1e40af"/>
-            <text x="665" y="320" fill="#0f172a" font-size="28" font-family="Tahoma" font-weight="700">مكاسب متوقعة</text>
+
             <circle cx="720" cy="380" r="14" fill="#22c55e"/>
-            <text x="750" y="388" fill="#334155" font-size="22" font-family="Tahoma">زيادة النشاط اليومي</text>
+            <rect x="745" y="370" width="115" height="16" rx="8" fill="#d1fae5"/>
+
             <circle cx="720" cy="420" r="14" fill="#3b82f6"/>
-            <text x="750" y="428" fill="#334155" font-size="22" font-family="Tahoma">تحسن اللياقة القلبية</text>
+            <rect x="745" y="410" width="135" height="16" rx="8" fill="#dbeafe"/>
+
             <circle cx="930" cy="380" r="14" fill="#f59e0b"/>
-            <text x="960" y="388" fill="#334155" font-size="22" font-family="Tahoma">نوم أفضل</text>
+            <rect x="955" y="370" width="90" height="16" rx="8" fill="#fef3c7"/>
+
             <circle cx="930" cy="420" r="14" fill="#ef4444"/>
-            <text x="960" y="428" fill="#334155" font-size="22" font-family="Tahoma">خفض الخمول</text>
+            <rect x="955" y="410" width="100" height="16" rx="8" fill="#fee2e2"/>
         </svg>
         <div class="graphic-note">
             لوحة رسومية تلخص الفكرة الأساسية: اللياقة لا تقاس بالحماس المؤقت، بل بالاستمرارية وتحويل الأرقام إلى سلوك يومي.
@@ -467,4 +504,4 @@
 </footer>
 
 </body>
-</html>
+  </html>
